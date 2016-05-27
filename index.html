@@ -6,9 +6,9 @@
     <!-- Bower powered js vendor file -->
     <script src="build/js/vendor.min.js"></script>
     <!-- Bower powered css vendor file -->
-    <link rel="stylesheet" href="build/css/vendor.css">
+    <!-- <link href="build/css/vendor.css" rel="stylesheet"> -->
     <!-- my css -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!-- js execution file -->
     <script type="text/javascript" src="build/js/app.js"></script>
     <!-- google font -->
@@ -17,22 +17,21 @@
   </head>
 
   <body>
-
     <div class = "jumbotron">
       <h2>GitHub User Search</h2>
     </div>
-
     <div class="container">
-
       <form id="userSearch" action="index.html" method="post">
-        <label for="user">Search for a Github User</label>
-        <input type="text" name="user" id="user">
-        <button type="submit" class="btn btn-info" name="button">Search</button>
-      </form><br><br><br><br><br>
+        <label for="username">Search for a Github User's Repository</label>
+        <input type="text" name="user" id="username">
+        <button type="submit" class="btn btn-info" id="search" name="button">Search</button>
+      </form><br>
 
       <div class="result">
-        <ul><u><span id="returnUser"></span></u><br></ul>
-        <p id="showError"></p>
+        <div class="returnUsername"></div>
+        <div class="returnRepoName"></div>
+        <div class="returnDescription"></div>
+        <div class="showError"></div>
       </div>
 
     </div>

@@ -8,7 +8,7 @@
     <!-- Bower powered css vendor file -->
     <!-- <link href="build/css/vendor.css" rel="stylesheet"> -->
     <!-- my css -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="scss/styles.css" rel="stylesheet">
     <!-- js execution file -->
     <script type="text/javascript" src="build/js/app.js"></script>
     <!-- google font -->
@@ -21,16 +21,16 @@
       <h2>GitHub User Search</h2>
     </div>
     <div class="container">
-      <form id="userSearch" action="index.html" method="post">
+      <form id="userSearch">
         <label for="username">Search for a Github User's Repository</label>
-        <input type="text" name="user" id="username">
+        <input type="text" id="username">
         <button type="submit" class="btn btn-info" id="search" name="button">Search</button>
       </form><br>
 
       <div class="result">
-        <div class="returnUsername"></div>
-        <div class="returnRepoName"></div>
-        <div class="returnDescription"></div>
+        Username: <div class="showUsername"></div>
+        <div class="showRepoName"></div>
+        <div class="showDescription"></div>
         <div class="showError"></div>
       </div>
 
